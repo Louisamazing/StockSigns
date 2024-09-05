@@ -1,30 +1,30 @@
 WITH sector_mapping AS (
     SELECT 'AMZN' AS TICKER, 'Consumer Discretionary' AS SECTOR
-    UNION ALL
+    UNION  -- Changed to UNION to prevent duplicates
     SELECT 'CVX' AS TICKER, 'Energy' AS SECTOR
-    UNION ALL
+    UNION
     SELECT 'GOOGL' AS TICKER, 'Communication Services' AS SECTOR
-    UNION ALL
+    UNION
     SELECT 'GS' AS TICKER, 'Financials' AS SECTOR
-    UNION ALL
+    UNION
     SELECT 'JPM' AS TICKER, 'Financials' AS SECTOR
-    UNION ALL
+    UNION
     SELECT 'KO' AS TICKER, 'Consumer Staples' AS SECTOR
-    UNION ALL
+    UNION
     SELECT 'META' AS TICKER, 'Communication Services' AS SECTOR
-    UNION ALL
+    UNION
     SELECT 'MRNA' AS TICKER, 'Health Care' AS SECTOR
-    UNION ALL
+    UNION
     SELECT 'MSFT' AS TICKER, 'Information Technology' AS SECTOR
-    UNION ALL
+    UNION
     SELECT 'NVDA' AS TICKER, 'Information Technology' AS SECTOR
-    UNION ALL
+    UNION
     SELECT 'PFE' AS TICKER, 'Health Care' AS SECTOR
-    UNION ALL
+    UNION
     SELECT 'PG' AS TICKER, 'Consumer Staples' AS SECTOR
-    UNION ALL
+    UNION
     SELECT 'TSLA' AS TICKER, 'Consumer Discretionary' AS SECTOR
-    UNION ALL
+    UNION
     SELECT 'XOM' AS TICKER, 'Energy' AS SECTOR
 )
 

@@ -100,10 +100,3 @@ models:
         description: "Quarter of the stock performance data."
       - name: quarterly_growth
         description: "Quarterly growth of the stock."
-
-# Optionally, define the sources if you want to test the integrity of your raw sources.
-sources:
-  - name: stg_stock_prices
-    description: "Staging table for stock prices data."
-  - name: stg_sector_mapping
-    description: "Staging table for mapping stock tickers to their respective sectors."

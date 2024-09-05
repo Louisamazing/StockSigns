@@ -39,23 +39,3 @@ models:
         description: "Adjusted closing price after stock splits and dividends."
       - name: VOLUME
         description: "Total number of shares traded during the day."
-
-sources:
-  - name: stock_data
-    description: "The raw data source for stock prices."
-    tables:
-      - name: stock_table
-        description: "Raw stock price data."
-        columns:
-          - name: TICKER
-            description: "Stock ticker symbol."
-            tests:
-              - not_null
-          - name: DATE
-            description: "Date of the stock data."
-            tests:
-              - not_null
-          - name: CLOSE
-            description: "Closing price of the stock."
-            tests:
-              - not_null
